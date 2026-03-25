@@ -78,86 +78,80 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section skills">
-        <div class="container section-reveal">
+        <!-- Animated Background Blobs -->
+        <div class="skills-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        
+        <div class="container section-reveal" style="position: relative; z-index: 1;">
             <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
+            <div class="skills-grid-modern">
                 <!-- Core Languages -->
-                <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
+                <div class="skill-card-modern glass-card">
+                    <div class="skill-card-header">
+                        <div class="icon-box"><i class="fas fa-code"></i></div>
                         <h3>Languages</h3>
                     </div>
-                    <ul class="skill-list">
-                        <li><span>Python</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 85%"></div>
-                            </div>
-                        </li>
-                        <li><span>Java</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 75%"></div>
-                            </div>
-                        </li>
-                        <li><span>C / C++</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 80%"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="skill-pills">
+                        <div class="skill-pill"><i class="fab fa-python skill-icon" style="color: #3776AB;"></i> Python</div>
+                        <div class="skill-pill"><i class="fab fa-java skill-icon" style="color: #5382a1;"></i> Java</div>
+                        <div class="skill-pill"><i class="fas fa-c skill-icon" style="color: #00599C;"></i> C / C++</div>
+                    </div>
                 </div>
+
                 <!-- Frontend -->
-                <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <i class="fas fa-laptop-code"></i>
+                <div class="skill-card-modern glass-card">
+                    <div class="skill-card-header">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
                         <h3>Frontend</h3>
                     </div>
-                    <ul class="skill-list">
-                        <li><span>HTML</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 90%"></div>
-                            </div>
-                        </li>
-                        <li><span>CSS</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 85%"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="skill-pills">
+                        <div class="skill-pill"><i class="fab fa-html5 skill-icon" style="color: #E34F26;"></i> HTML</div>
+                        <div class="skill-pill"><i class="fab fa-css3-alt skill-icon" style="color: #1572B6;"></i> CSS</div>
+                        <div class="skill-pill"><i class="fab fa-js skill-icon" style="color: #F7DF1E;"></i> JavaScript</div>
+                    </div>
                 </div>
+
                 <!-- Tools -->
-                <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
+                <div class="skill-card-modern glass-card">
+                    <div class="skill-card-header">
+                        <div class="icon-box"><i class="fas fa-tools"></i></div>
                         <h3>Tools</h3>
                     </div>
-                    <ul class="skill-list">
-                        <li><span>Figma</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 95%"></div>
-                            </div>
-                        </li>
-                        <li><span>FigJam / Canva</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 90%"></div>
-                            </div>
-                        </li>
-                        <li><span>MySQL</span>
-                            <div class="bar-container">
-                                <div class="bar" style="width: 70%"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="skill-pills">
+                        <div class="skill-pill"><i class="fab fa-figma skill-icon" style="color: #F24E1E;"></i> Figma</div>
+                        <div class="skill-pill"><i class="fas fa-pen-nib skill-icon" style="color: #00C4CC;"></i> FigJam / Canva</div>
+                        <div class="skill-pill"><i class="fas fa-database skill-icon" style="color: #4479A1;"></i> MySQL</div>
+                        <div class="skill-pill"><i class="fab fa-github skill-icon" style="color: #181717;"></i> Git & GitHub</div>
+                    </div>
                 </div>
-                <!-- Soft Skills -->
-                <div class="skill-category glass-card">
-                    <div class="category-header">
-                        <i class="fas fa-hands-helping"></i>
+
+                <!-- Backend -->
+                <div class="skill-card-modern glass-card">
+                    <div class="skill-card-header">
+                        <div class="icon-box"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill"><i class="fab fa-python skill-icon" style="color: #092E20;"></i> Django</div>
+                        <div class="skill-pill"><i class="fas fa-pepper-hot skill-icon" style="color: #000000;"></i> Flask</div>
+                        <div class="skill-pill"><i class="fas fa-network-wired skill-icon" style="color: #4A90E2;"></i> REST API</div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills (Moved to Bottom) -->
+                <div class="skill-card-modern glass-card" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto; width: 100%;">
+                    <div class="skill-card-header" style="justify-content: center;">
+                        <div class="icon-box"><i class="fas fa-hands-helping"></i></div>
                         <h3>Soft Skills</h3>
                     </div>
-                    <div class="tags-container">
-                        <span class="skill-tag">Problem-solving</span>
-                        <span class="skill-tag">Adaptability</span>
-                        <span class="skill-tag">Teamwork</span>
+                    <div class="skill-pills" style="justify-content: center;">
+                        <div class="skill-pill soft-skill">Problem-solving</div>
+                        <div class="skill-pill soft-skill">Adaptability</div>
+                        <div class="skill-pill soft-skill">Teamwork</div>
+                        <div class="skill-pill soft-skill">Communication</div>
+                        <div class="skill-pill soft-skill">Time Management</div>
                     </div>
                 </div>
             </div>
@@ -320,7 +314,8 @@
                             <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                             <div class="cert-details">
                                 <h4>Programming in C</h4>
-                                <p>CSE Pathshala</p>
+                                <p class="cert-company"><strong>CSE Pathshala</strong></p>
+                                <p class="cert-desc">Mastered foundational concepts of C programming including data structures and algorithms.</p>
                             </div>
                             <a href="c.pdf" target="_blank" class="btn btn-icon"><i
                                     class="fas fa-external-link-alt"></i></a>
@@ -329,7 +324,8 @@
                             <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
                             <div class="cert-details">
                                 <h4>Computer Communications</h4>
-                                <p>Coursera (Univ. of Colorado)</p>
+                                <p class="cert-company"><strong>Google</strong></p>
+                                <p class="cert-desc">Explored network protocols, architecture, and data transmission principles.</p>
                             </div>
                             <a href="google.pdf" target="_blank" class="btn btn-icon"><i
                                     class="fas fa-external-link-alt"></i></a>
@@ -338,7 +334,8 @@
                             <div class="cert-icon"><i class="fas fa-mobile-alt"></i></div>
                             <div class="cert-details">
                                 <h4>Responsive Web Design</h4>
-                                <p>FreeCodeCamp</p>
+                                <p class="cert-company"><strong>FreeCodeCamp</strong></p>
+                                <p class="cert-desc">Built responsive web pages using modern HTML5, CSS3, and Flexbox/Grid.</p>
                             </div>
                             <a href="fcc.pdf" target="_blank" class="btn btn-icon"><i
                                     class="fas fa-external-link-alt"></i></a>
@@ -347,7 +344,8 @@
                             <div class="cert-icon"><i class="fab fa-python"></i></div>
                             <div class="cert-details">
                                 <h4>Python Bootcamp</h4>
-                                <p>Udemy</p>
+                                <p class="cert-company"><strong>Udemy</strong></p>
+                                <p class="cert-desc">Gained practical experience in Python scripting, automation, and basic web development.</p>
                             </div>
                             <a href="python.pdf" target="_blank" class="btn btn-icon"><i
                                     class="fas fa-external-link-alt"></i></a>
